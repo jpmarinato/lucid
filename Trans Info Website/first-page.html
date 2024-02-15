@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <!-- <header>
+    </header> -->
+
+    <main>
+        
+        <div class="container">
+                <div class="grid">
+                    
+                    <div class="col-12"></div>
+
+                   
+                    
+                        <!--------- Text Card --------->
+                    <div class="bumperL col-0"></div>
+
+                    <div class="bumperL col-0 col-1-sm"></div>
+
+                    <div class="cardText col-12 col-10-sm">
+                        <form id="userStats">
+                            <div class="container-mini">
+                                <div class="grid-mini">
+    
+                                    <div class="bumperL col-0"></div>
+                                    <div class="titleText col-12">
+                                        <div class="wrapperIndex wrapper">
+                                    <!-------------------- TITLE OF PAGE GOES HERE -------------------->     
+    
+                                            <h1 class="titleText">
+                                                Let's get to know you!
+                                            </h1>
+    
+                                    <!-- Hey Percy: See if you prefer h1 or h2 for this one -->
+                                            
+    
+                                    <!-------------------- /TITLE OF PAGE ENDS HERE -------------------->    
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <!-------------------- What is your name? -------------------->        
+    
+                                        <div class="titleText col-12">
+                                            <div class="textWrapper wrapperIndex wrapper">
+                                                <h3>
+                                                    What is your name?
+                                                </h3>   
+                                            </div>
+                                        </div>
+    
+                                        <div class="bumperL col-2"></div>
+    
+                                    <input class="col-8 button inputText" type="text" id="name" name="name" required width="100%"/>
+    
+                                    <div class="bumperR col-2"></div>
+                                    <!-------------------- /What is your name? -------------------->
+
+                                    <div class="col-12"></div>
+    
+                                    <!-------------------- How old are you? -------------------->        
+    
+                                    <div class="titleText col-12">
+                                        <div class="textWrapper wrapperIndex wrapper">
+                                            <h3>
+                                                How old are you?
+                                            </h3>   
+                                        </div>
+                                    </div>
+    
+                                    <div class="bumperL col-4 col-5-md"></div>
+    
+    
+                                    <div class="bumperL col-5">
+                                            
+    
+                                            <fieldset required>
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="age1" name="age" value="0_17">
+                                            
+                                                    <label for="age1"><h4 class="radioOptions">0 - 17</h4></label>
+                                                </div>
+                                              
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="age2" name="age" value="18_24">
+                                                    <label for="age2"><h4 class="radioOptions">18 - 24</h4></label>
+                                                </div>
+                                              
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="age3" name="age" value="25">
+                                                    <label for="25"><h4 class="radioOptions">25 and up</h4 class="radioOptions"></label>
+                                                </div>
+                                            </fieldset>
+                                    </div>
+    
+                                    <div class="bumperR col-4"></div>
+                                        
+                                        <!-- <label class="col-1 radio-container">Four
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        </label> -->
+    
+    
+                                    <!-- <div class="bumperR col-3"></div> -->
+                                <!-------------------- /How old are you? -------------------->
+
+                                <div class="col-12"></div>
+    
+    
+    
+                                    
+                                    
+                                    <!-------------------- How do you identify? -------------------->        
+                                    <div class="titleText col-12">
+                                        <div class="textWrapper wrapperIndex wrapper">
+                                            <h3>
+                                                How do you identify?
+                                            </h3>   
+                                        </div>
+                                    </div>
+    
+                                    <div class="bumperL col-2"></div>
+    
+                                    <input class="col-8 button inputText" type="text" id="identity" name="identity" required width="100%"/>
+    
+                                    <div class="bumperR col-2"></div>
+                                    <!-------------------- /How do you identify? -------------------->
+
+                                    <div class="col-12"></div>
+                                    
+                                    <!--------- What was your assigned gender at birth? ------------>        
+    
+                                    <div class="titleText col-12">
+                                        <div class="textWrapper wrapperIndex wrapper">
+                                            <h3>
+                                                What was your assigned gender at birth?
+                                            </h3>   
+                                        </div>
+                                    </div>
+    
+                                    <div class="bumperL col-4 col-5-md"></div>
+    
+    
+                                    <div class="bumperL col-3">
+                                            
+    
+                                            <fieldset required>
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="amab" name="gender" value="amab">
+                                            
+                                                    <label for="amab"><h4 class="radioOptions">Male</h4></label>
+                                                </div>
+                                              
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="afab" name="gender" value="afab">
+                                                    <label for="afab"><h4 class="radioOptions">Female</h4></label>
+                                                </div>
+                                              
+                                            </fieldset>
+                                    </div>
+    
+                                    <div class="bumperR col-4"></div>
+                                        
+                                        <!-- <label class="col-1 radio-container">Four
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        </label> -->
+    
+    
+                                    <!-- <div class="bumperR col-3"></div> -->
+                                <!--------- /What was your assigned gender at birth? ------------>
+
+                                <div class="spacer-25 col-12"></div>
+    
+    
+    
+    
+                                            <div class="bumperL col-4"></div>
+    
+                                            <div class="textWrapper col-4">
+                                                
+                                    <!-------------------- BUTTON -------------------->
+    
+                                    
+                                                
+                                    <!-- <h1>Talk and Text Lines</h1>
+                                    <h2>Talk and Text Lines</h2>
+                                    <h3>Talk and Text Lines</h3>
+                                    <h4>Talk and Text Lines</h4> -->
+
+
+    
+                                                <input type="submit" value="SUBMIT">
+
+                                <!-------------------- /BUTTON -------------------->
+                                    
+                                    
+                                    
+    
+                                    <!-- <p>To be, or not to be, thats the question That makes calamity of so long life; That I would all my pilgrimage dilate, And that the lean abhorred monster keeps The deep damnation of his taking-off;</p>
+    
+                                    <p>Graves, yawn and yield your dead, If it were done when 'tis done, then 'twere well</p>
+    
+                                    <p>Come, bitter conduct, come, unsavoury guide! With a bare bodkin? who would fardels bear, Those that slew thy virgin knight; About a prophecy, which says that 'g' Gives her fame which never dies.</p>
+    
+                                    <p>And makes us rather bear those ills we have With worms that are thy chamber-maids; o, here Who should against his murderer shut the door, Growing a bath and healthful remedy</p>
+    
+                                    <p>To plague the inventor this even-handed justice Strong both against the deed; then, as his host, To set my brother clarence and the king</p>
+    
+                                    <p>Making a famine where abundance lies, That patient merit of the unworthy takes, And shake the yoke of inauspicious stars To eat the world's due, by the grave and thee. I should but teach him how to tell my story.</p> -->
+    
+    
+                                            
+                                            
+                                            
+                                            
+                                            
+                                    <!-------------------- /TEXT ENDS HERE --------------------->
+                                            </div>
+                                            <div class="bumperL col-0 col-1-md"></div>
+                                            <div class="spacer-25 col-12"></div>
+    
+    
+                                    </div>
+                                    
+                                    <div class="bumperR col-1"></div>
+                                        
+                                    </div>
+                                    <div class="col-12"></div>
+    
+                                    <!-- <div class="c1b3 fx button col-12">
+                                        <div class="wrapper"><h5>Talk and Text Lines</h5></div>
+                                    </div>
+                                    <div class="c1b4 fx button col-12">
+                                        <div class="wrapper"><h5>Talk and Text Lines</h5></div>
+                                    </div> -->
+    
+                                </div>
+                            </div>
+                            
+                        </form>
+
+                    </div>
+                    
+                    <div class="bumperR col-0 col-2-sm"></div>
+                    
+                    
+                    <div class="bumperR col-0"></div>
+
+                    <!------- End of Card 1------->
+
+                    
+
+                    
+            </div>
+        
+        
+        </div>
+    </main>
+    
+    <!-- <footer>
+    </footer> -->
+    <script>
+        // document.querySelector("#userStats").addEventListener("submit", (event) => {
+
+        // event.preventDefault();
+
+        // const name = document.querySelector("input[name='name']").value;
+
+        // const age = document.querySelector("input[name='age']:checked").value;
+
+        // const id = document.querySelector("input[name='identity']").value;
+
+        // const gender = document.querySelector("input[name='gender']:checked").value;
+
+        // for(var i=0;i<document.getElementsByClassName("recipe-type-button").length){
+        //     if(document.getElementsByClassName("recipe-type-button")[i].checked){
+        //         recipe_entry = {
+        //             type : document.getElementsByClassName("recipe-type-button")[i].value
+        //         }
+        //  }
+        // }
+
+        // window.parent.parentName = name;
+        // window.parent.parentAge = age;
+        // window.parent.parentId = id;
+        // window.parent.parentGender = gender;
+
+        // window.parent.postMessage({ message: "getAppData", value: MyDataToPass }, "*");
+
+        // console.log(parentName);
+        // console.log(parentAge);
+        // console.log(parentId);
+        // console.log(parentGender);
+
+
+
+        // console.log(name);
+        // console.log(age);
+        // console.log(id);
+        // console.log(gender);
+
+        // })
+    </script>
+
+<script>
+    // -------------FIRST PAGE SUBMIT-------------
+
+    document.querySelector("#userStats").addEventListener("submit", (event) => {
+
+        event.preventDefault();
+
+        const name = document.querySelector("input[name='name']").value;
+
+        const age = document.querySelector("input[name='age']:checked").value;
+
+        const id = document.querySelector("input[name='identity']").value;
+
+        const gender = document.querySelector("input[name='gender']:checked").value;
+
+        // for(var i=0;i<document.getElementsByClassName("recipe-type-button").length){
+        //     if(document.getElementsByClassName("recipe-type-button")[i].checked){
+        //         recipe_entry = {
+        //             type : document.getElementsByClassName("recipe-type-button")[i].value
+        //         }
+        //  }
+        // }
+
+        /* 
+            gender:
+            amab 
+            afab
+
+            age:
+            0_17
+            18_24
+            25 
+        */
+
+        console.log(name); //unused for now
+        console.log(age);
+        console.log(id); //unused for now
+        console.log(gender);
+
+        hideClass(".form")
+        showClass(".card");
+
+        if (gender == "amab") {
+            hideClass(".AFAB");
+        }
+        else {
+            hideClass(".AMAB");
+        }
+
+        if (age == "0_17") {
+            hideClass(".mature");
+        }
+
+        // document.getElementById("form").style.display = "none";
+
+    })
+
+    // --------------CLICK OPEN CLOSE--------------
+
+    const dropdownBoxes = document.querySelectorAll(".js-open-next");
+
+    dropdownBoxes.forEach( function (current_box) {
+
+        current_box.addEventListener("click", function(e) {
+            // console.log(this.nextElementSibling);
+
+            const old_display = this.nextElementSibling.style.display;
+
+            
+            document.querySelectorAll('.child').forEach((other_list_el) => {
+                other_list_el.style.display = "none";
+            });
+            
+            if(old_display !== "grid") {
+                openChild(this.nextElementSibling); 
+            }
+
+        })
+
+    });
+
+    // -------------HIDE CLASS-------------
+
+    function hideClass(classTarget) {
+        let className = document.querySelectorAll(classTarget);
+
+        className.forEach((el) => 
+        { 
+            console.log("c9:" + el);  
+            el.classList.add('hide');
+        });
+    };
+
+    // -------------SHOW CLASS-------------
+
+    function showClass(classTarget) {
+        let className = document.querySelectorAll(classTarget);
+
+        className.forEach((el) => 
+        { 
+            console.log("c9:" + el);  
+            el.classList.add('show');
+        });
+    };
+
+    // -------------OPEN CHILD-------------
+
+    function openChild(child){
+    // let child = document.getElementById(childID);
+    // console.log(child.style.display)
+    if(child.style.display !== 'grid') {
+        child.style.display = 'grid';
+    } else {
+        child.style.display = 'none';
+    } 
+
+    // child.style.display = 'grid';
+    }
+
+    // -------------IFRAME-------------
+
+    function iFrame(target){
+
+        let iframe = document.getElementById("iframe");
+
+        iframe.style.display = "grid";
+
+        iframe.src = "" + target + ".html";
+
+        
+
+
+
+
+
+    }
+
+
+</script>
+
+</body>

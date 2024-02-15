@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tucking</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <!-- <header>
+    </header> -->
+
+    <main>
+        
+        <div class="container">
+                <div class="grid">
+                    <div class="col-12"></div>
+
+                   
+                    
+                     <!--------- Text Card --------->
+                     <div class="bumperL col-0"></div>
+
+                     <div class="cardText col-12">
+                         <div class="container-miniText container-mini">
+                             <div class="grid-miniText grid-mini">
+ 
+                                 <div class="bumperL col-1"></div>
+                                 <div class="titleText col-10">
+                                     <div class="wrapperIndex wrapper">
+                                 <!-------------------- TITLE OF PAGE GOES HERE -------------------->     
+ 
+                                         <h1 class="titleText">
+                                             Tucking
+                                         </h1>
+ 
+                                 <!-------------------- /TITLE OF PAGE ENDS HERE -------------------->    
+                                     </div>
+                                 </div>
+                                 <div onclick="openChild(parent.document.getElementById(window.name))" class="col-1">
+                                     <svg class="wrapperIndex wrapper closeBtn" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                                 </div>
+                                 <div class="bumperR col-0"></div>
+ 
+                                 <!-------------------- /SPAN -------------------->  
+ 
+ 
+                                 <div class="bumperL col-0 col-1-md"></div>
+                                 <div class="buttonText col-12 col-10-md">
+                                     <div class="grid">
+                                         <div class="spacer-10 col-12"></div>
+                                         <div class="bumperL col-1"></div>
+                                         <div class="textWrapper col-10">
+                                 <!-------------------- TEXT STARTS HERE -------------------->
+                                            
+                                <p>Tucking refers to the practice of hiding genitals so they are not visible in tight clothing. There are many ways to tuck, and some of those methods, as well as health and safety tips, have been outlined in a great <a href="http://www.phsa.ca/transcarebc/Documents/HealthProf/Tucking-Handout.pdf" target="new">PDF from TransCareBC</a></p>
+ 
+                                <!-------------------- /TEXT ENDS HERE --------------------->
+                                        </div>
+                                        <div class="bumperL col-0 col-1-md"></div>
+                                        <div class="spacer-25 col-12"></div>
+
+
+                                </div>
+                                
+                                <div class="bumperR col-1"></div>
+                                    
+                                </div>
+                                <div class="col-12"></div>
+
+                                <!-- <div class="c1b3 fx button col-12">
+                                    <div class="wrapper"><h5>Talk and Text Lines</h5></div>
+                                </div>
+                                <div class="c1b4 fx button col-12">
+                                    <div class="wrapper"><h5>Talk and Text Lines</h5></div>
+                                </div> -->
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="bumperR col-0"></div>
+
+                    <!------- End of Card 1------->
+
+                    
+
+                    
+            </div>
+        
+        
+        </div>
+    </main>
+    
+    <!-- <footer>
+    </footer> -->
+  
+    <script>    
+        
+
+
+        const dropdownBoxes = document.querySelectorAll(".js-open-next");
+
+        dropdownBoxes.forEach( function (current_box) {
+
+            current_box.addEventListener("click", function() {
+                // console.log(this.nextElementSibling);
+                openChild(this.nextElementSibling); 
+            })
+
+        });
+        
+        function openChild(child){
+            // let child = document.getElementById(childID);
+            console.log(child.style.display)
+            if(child.style.display !== 'grid') {
+                child.style.display = 'grid';
+            } else {
+                child.style.display = 'none';
+            } 
+
+            // child.style.display = 'grid';
+        }
+        
+        // function parentChild(parentID, childID){
+        //     let parent = document.getElementById(parentID);
+            
+
+        //     parent.addEventListener(click, openChild(childID))
+        // }
+
+        
+
+        // parentChild(c1b1,c1b1Child);
+    </script>
+</body>

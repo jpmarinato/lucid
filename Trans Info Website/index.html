@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucid</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <button id="get-away" class="panic"><h4 class="noNo">CLOSE</h4></button>
+
+    <!-- <header>
+    </header> -->
+
+    <main>
+        
+
+        <!-- <iframe id="iframe" name="iframe" src="first-page.html" frameborder="0"></iframe> -->
+
+        <iframe id="iframe" name="iframe" class="iframe" src="text_page.html" frameborder="0"></iframe>
+        
+        <div class="container">
+            <div class="grid">
+                <!------------------ FORM ------------------>
+
+                <div class="form col-12">
+                    <div class="grid">
+                        <div class="form col-12"></div>
+
+                            <!--------- Text Card --------->
+                        <div class="bumperL col-0"></div>
+
+                        <div class="bumperL col-0 col-1-sm"></div>
+
+                        <div class="cardText col-12 col-10-sm">
+
+                            <form id="userStats">
+                                <div class="container-mini">
+                                    <div class="grid-mini">
+                                        
+                                        <div class="bumperL col-0"></div>
+
+                                        <!-------------------- TITLE OF PAGE GOES HERE -------------------->
+                                        <div class="titleText col-12">
+                                            <div class="wrapperIndex wrapper">
+
+                                                <h1 class="titleText">
+                                                    Let's get to know you!
+                                                </h1>
+
+                                            </div>
+                                        </div>
+                                        <!-------------------- /TITLE OF PAGE ENDS HERE -------------------->
+
+
+                                        <!-------------------- What is your name? -------------------->
+                                        <div class="titleText col-12">
+                                            <div class="textWrapper wrapperIndex wrapper">
+                                                <h3>
+                                                    What is your name?
+                                                </h3> 
+                                            </div>
+                                        </div>
+
+                                        <div class="bumperL col-2"></div>
+
+                                        <input class="col-8 button inputText" type="text" id="name" name="name" required width="100%"/>
+
+                                        <div class="bumperR col-2"></div>
+                                        <!-------------------- /What is your name? -------------------->
+
+                                        <div class="col-12"></div>
+
+                                        <!-------------------- How old are you? --------------------> 
+                                        <div class="titleText col-12">
+                                            <div class="textWrapper wrapperIndex wrapper">
+                                                <h3>
+                                                    How old are you?
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="bumperL col-4 col-5-md"></div>
+
+                                        <div class="form-ages col-5">
+                                            <fieldset required>
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="age1" name="age" value="0_17">
+                                            
+                                                    <label for="age1"><h4 class="radioOptions">0 - 17</h4></label>
+                                                </div>
+                                              
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="age2" name="age" value="18_24">
+                                                    <label for="age2"><h4 class="radioOptions">18 - 24</h4></label>
+                                                </div>
+                                              
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="age3" name="age" value="25">
+                                                    <label for="25"><h4 class="radioOptions">25 and up</h4 class="radioOptions"></label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="bumperR col-4"></div>
+                                        <!-------------------- /How old are you? -------------------->
+
+                                        <div class="col-12"></div>
+
+                                        <!-------------------- How do you identify? -------------------->
+                                        <div class="titleText col-12">
+                                            <div class="textWrapper wrapperIndex wrapper">
+                                                <h3>
+                                                    How do you identify?
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="bumperL col-2"></div>
+
+                                        <input class="col-8 button inputText" type="text" id="identity" name="identity" required width="100%"/>
+    
+                                        <div class="bumperR col-2"></div>
+                                        <!-------------------- /How do you identify? -------------------->
+
+                                        <div class="col-12"></div>
+                                    
+                                        <!--------- What was your assigned gender at birth? ------------>
+                                        <div class="titleText col-12">
+                                            <div class="textWrapper wrapperIndex wrapper">
+                                                <h3>
+                                                    What was your assigned gender at birth?
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="bumperL col-4 col-5-md"></div>
+
+                                        <div class="form-genders col-3">
+                                            <fieldset required>
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="amab" name="gender" value="amab">
+                                            
+                                                    <label for="amab"><h4 class="radioOptions">Male</h4></label>
+                                                </div>
+                                              
+                                                <div class="flex-start">
+                                                    <input class="radio" type="radio" id="afab" name="gender" value="afab">
+                                                    <label for="afab"><h4 class="radioOptions">Female</h4></label>
+                                                </div>    
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="bumperR col-4"></div>
+                                        <!--------- /What was your assigned gender at birth? ------------>
+
+                                        <div class="spacer-25 col-12"></div>
+
+
+                                        <div class="bumperL col-4"></div>
+
+                                        <div class="textWrapper col-4">
+
+                                            <!-------------------- BUTTON -------------------->
+
+                                            <input type="submit" value="SUBMIT">
+
+                                            <!-------------------- /BUTTON -------------------->
+
+                                        </div>
+
+                                        <div class="bumperR col-0 col-1-md"></div>
+
+                                        <div class="spacer-25 col-12"></div>
+
+                                    </div>
+                                    <!-------------------- /grid-mini --------------------->
+                                </div>
+                                <!-------------------- /container-mini --------------------->
+                            </form>
+                        </div>
+                        <!-------------------- /cardText --------------------->
+
+                        <div class="bumperR col-0 col-1-sm"></div>
+                    
+                        <div class="bumperR col-0"></div>
+
+                    </div>
+                </div>
+
+                <!------------------  Cards ------------------>
+
+                <!--------- Card 1: Support--------->
+                <div class="bumperL col-1 col-3-sm col-3-md col-0-lg"></div>
+
+                <div id="c1" class="card1 card fx col-10 col-6-sm col-6-md col-3-lg">
+                    <div class="container-mini">
+                        <div class="grid-mini">
+
+                            <div class="title col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h2 class="titleText">Support</h2></div>
+                            </div>
+
+                            <div onclick="iFrame('support_TalkText.html')" id="c1b1" class="c1b1 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Talk and Text Lines</h5></div>
+                            </div>
+
+                            <div onclick="iFrame('support_supportGroups.html')" id="c1b2" class=" c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Support Groups</h5></div>
+                            </div>
+
+                            <div onclick="iFrame('support_parents.html')" class="c1b3 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Parental Resources</h5></div>
+                            </div>
+                            <!-- <div class="c1b3 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Talk and Text Lines</h5></div>
+                            </div>
+                            <div class="c1b4 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Talk and Text Lines</h5></div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bumperR col-1 col-3-sm col-3-md col-0-lg"></div>
+
+                <!------- End of Card 1------->
+
+                <!--------- Card 2: Social Transitioning--------->
+                <div class="bumperL col-1 col-3-sm col-3-md col-0-lg"></div>
+
+                <div id="c2" class="card2 card fx col-10 col-6-sm col-6-md col-3-lg">
+                    <div class="container-mini">
+                        <div class="grid-mini">
+
+                            <div class="title col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h3 class="titleText socialText">Social Transitioning</h3></div>
+                            </div>
+
+                            <div id="c2b1" class="c1b1 js-open-next fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Appearance</h5></div>
+                            </div>
+                                
+                            <div id="c2b1Child" class="child col-12">
+                                    <div class="AMAB grid-mini">
+
+                                        <div  class="bumperL col-1"></div>
+                                        <div onclick="iFrame('appearance_hair.html')" id="c2b1b1" class="cbb c1b1 fx button col-10">
+                                            <div  class="wrapperIndex 
+                                            wrapper"><h5>Hair</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_appearance_shoes.html')" id="c2b1b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Shoes</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_appearance_clothing.html')" id="c2b1b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Clothing</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_appearance_makeup.html')" id="c2b1b4" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Make Up</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_appearance_hairRemoval.html')" id="c2b1b5" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Hair Removal</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_appearance_tucking.html')" id="c2b1b6" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Tucking</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                    </div>
+
+                                    <div class="AFAB grid-mini">
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('appearance_hair.html')" id="c1b1b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Hair</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <!-- <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_appearance_shoes.html')" id="c1b1b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Shoes</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div> -->
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_appearance_clothing.html')" id="c1b1b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Clothing</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_appearance_binding.html')" id="c1b1b4" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Binding</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_appearance_packing.html')" id="c1b1b5" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Packing</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                    </div> 
+                                </div>
+
+                                
+
+
+
+                            <div id="c1b2" class="js-open-next c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Internal</h5></div>
+                            </div>
+
+                            <div id="c1b2Child" class="child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('internal_nameSelection.html')" id="c1b2b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Name Selection</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_internal_voiceTraining.html')" id="c1b2b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Voice Training</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div id="c1b3" class="js-open-next c1b3 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>External</h5></div>
+                            </div>
+
+                            <div id="c1b3Child" class="child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('external_comingOut.html')" id="c1b3b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Coming Out</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('external_genderMarkerForms.html')" id="c1b3b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Gender Marker Change Forms</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('external_nameForms.html')" id="c1b3b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Name Change Forms</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bumperR col-1 col-3-sm col-3-md col-0-lg"></div>
+                <!------- End of Card 2------->
+
+                <!--------- Card 3: HRT--------->
+                <div class="bumperL col-1 col-3-sm col-3-md col-0-lg"></div>
+
+                <div id="c3" class="card3 card fx col-10 col-6-sm col-6-md col-3-lg">
+                    <div class="container-mini">
+                        <div class="grid-mini">
+
+                            <div class="title col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h2 class="titleText">HRT</h2></div>
+                            </div>
+
+                            <div onclick="iFrame('doctors_endocrinologists.html')" id="c3b1" class="c1b1 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Doctors</h5></div>
+                            </div>   
+
+                            <div onclick="iFrame('hormoneReadiness.html')" id="c3b2" class="c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Gender Readiness Assessment</h5></div>
+                            </div>
+
+                            <div id="c3b3" class="js-open-next AFAB c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Hormones</h5></div>
+                            </div>
+
+                            <div id="c3b3Child" class="AFAB child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_hormones_testosterone.html')" id="c3b3b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Testosterone</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_hormones_timeline.html')" id="c3b3b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Timeline</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('afab_hormones_effects.html')" id="c3b3b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Side Effects</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+
+                            <div id="c4b2" class="js-open-next AMAB c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Hormones</h5></div>
+                            </div>
+
+                            <div id="c4b2Child" class="AMAB child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_hormones_blockers.html')" id="c4b2b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Blockers</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_hormones_estrogen.html')" id="c4b2b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Estrogen</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_hormones_timeline.html')" id="c4b2b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Timeline</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame('amab_hormones_effects.html')" id="c4b2b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Side Effects</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bumperR col-1 col-3-sm col-3-md col-0-lg"></div>
+                <!------- End of Card 3------->
+
+                <!--------- Card 4: Surgery --------->
+                <div class="bumperL col-1 col-3-sm col-3-md col-0-lg"></div>
+
+                <div id="c4" class="card4 card fx col-10 col-6-sm col-6-md col-3-lg">
+                    <div class="container-mini">
+                        <div class="grid-mini">
+
+                            <div class="title col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h2 class="titleText">Surgery</h2></div>
+                            </div>
+
+                            <div id="c4b1" class="js-open-next c1b1 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Logistics</h5></div>
+                            </div>
+
+                            <div id="c4b1Child" class="child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b1b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Funding</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c1b1b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Pre-Requisites Waitlists</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+
+                            <div id="c4b2" class="js-open-next AMAB c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Surgical Options</h5></div>
+                            </div>
+
+                            <div id="c4b2Child" class="AMAB child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b2b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Voice Surgeries</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b2b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Adam's Apple Removal</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b2b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>FFS</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b2b4" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Top Surgery</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b2b5" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Bottom Surgery</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+
+                            <div id="c4b3" class="js-open-next AFAB c1b2 fx button col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Surgical Options</h5></div>
+                            </div>
+
+                            <div id="c4b3Child" class="AFAB child col-12">
+                                <div class="grid-mini">
+                                    <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b3b1" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Internal Organ Removal</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b3b2" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Top Surgery</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+
+                                        <div class="bumperL col-1"></div>
+                                        <div onclick="iFrame()" id="c4b3b3" class="cbb c1b1 fx button col-10">
+                                            <div class="wrapperIndex 
+                                            wrapper"><h5>Bottom Surgery</h5></div>
+                                        </div>
+                                        <div class="bumperR col-1"></div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="c1b2 fx button col-12"></div>
+                            <div class="c1b3 fx button col-12"></div>
+                            <div class="c1b4 fx button col-12"></div> -->
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bumperR col-1 col-3-sm col-3-md col-0-lg"></div>
+
+                <!------- End of Card 4------->
+
+                <!------------------  /End of Cards ------------------>
+
+                
+
+
+                
+            </div>
+            </div>
+        
+        
+        </div>
+        
+    </main>
+    
+    <!-- <footer>
+    </footer> -->
+    <script>
+        // -------------FIRST PAGE SUBMIT-------------
+
+        document.querySelector("#userStats").addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            const name = document.querySelector("input[name='name']").value;
+
+            const age = document.querySelector("input[name='age']:checked").value;
+
+            const id = document.querySelector("input[name='identity']").value;
+
+            const gender = document.querySelector("input[name='gender']:checked").value;
+
+            // for(var i=0;i<document.getElementsByClassName("recipe-type-button").length){
+            //     if(document.getElementsByClassName("recipe-type-button")[i].checked){
+            //         recipe_entry = {
+            //             type : document.getElementsByClassName("recipe-type-button")[i].value
+            //         }
+            //  }
+            // }
+
+            /* 
+                gender:
+                amab 
+                afab
+
+                age:
+                0_17
+                18_24
+                25 
+            */
+
+            console.log(name); //unused for now
+            console.log(age);
+            console.log(id); //unused for now
+            console.log(gender);
+
+            hideClass(".form")
+            showClass(".card");
+
+            if (gender == "amab") {
+                hideClass(".AFAB");
+            }
+            else {
+                hideClass(".AMAB");
+            }
+
+            if (age == "0_17") {
+                hideClass(".mature");
+            }
+
+            // document.getElementById("form").style.display = "none";
+
+        })
+
+        // --------------CLICK OPEN CLOSE--------------
+
+        const dropdownBoxes = document.querySelectorAll(".js-open-next");
+
+        dropdownBoxes.forEach( function (current_box) {
+
+            current_box.addEventListener("click", function(e) {
+                // console.log(this.nextElementSibling);
+
+                const old_display = this.nextElementSibling.style.display;
+
+                
+                document.querySelectorAll('.child').forEach((other_list_el) => {
+                    other_list_el.style.display = "none";
+                });
+                
+                if(old_display !== "grid") {
+                    openChild(this.nextElementSibling); 
+                }
+
+            })
+
+        });
+
+        // -------------HIDE CLASS-------------
+
+        function hideClass(classTarget) {
+            let className = document.querySelectorAll(classTarget);
+
+            className.forEach((el) => 
+            { 
+                console.log("c9:" + el);  
+                el.classList.add('hide');
+            });
+        };
+
+        // -------------SHOW CLASS-------------
+
+        function showClass(classTarget) {
+            let className = document.querySelectorAll(classTarget);
+
+            className.forEach((el) => 
+            { 
+                console.log("c9:" + el);  
+                el.classList.add('show');
+            });
+        };
+
+        // -------------OPEN CHILD-------------
+
+        function openChild(child){
+        // let child = document.getElementById(childID);
+        // console.log(child.style.display)
+        if(child.style.display !== 'grid') {
+            child.style.display = 'grid';
+        } else {
+            child.style.display = 'none';
+        } 
+
+        // child.style.display = 'grid';
+        }
+        
+        // -------------IFRAME-------------
+
+        function iFrame(target){
+
+            const link = document.getElementById("iframe");
+            
+            link.src = target;
+
+            openChild(link);
+
+            console.log(link);
+            console.log(target);
+        }
+
+        // -------------PANIC BUTTON-------------
+
+        function getAway() {
+            // Get away right now
+            window.open("http://weather.com", "_newtab");
+            // Replace current site with another benign site
+            window.location.replace('http://google.com');
+        }
+
+        $(function() {
+
+            $("#get-away").on("click", function(e) {
+                getAway();
+            });
+
+            $("#get-away a").on("click", function(e) {
+                // allow the (?) link to work
+                e.stopPropagation();
+            });
+
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27) { // escape key
+                getAway();
+                }
+            });
+
+        });
+
+
+    </script>
+</body>
