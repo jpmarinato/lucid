@@ -4,7 +4,7 @@
 
 
 :root {
-    --fontBase: clamp(1.125rem, 0.9863rem + 0.3906vw, 1.25rem);
+    --fontBase: clamp(16px, 15.3043px + 0.2174vi, 18px);
     --mod1: 1.33;
     --mod2: calc(var(--mod1)*var(--mod1));
     --mod3: calc(var(--mod2)*var(--mod1));
@@ -146,6 +146,23 @@ a {
     align-items: center;
 }
 
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.closeWrapper > svg {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    min-height: 50px;
+    min-width: 50px;
+
+}
+
 
 
 label {
@@ -164,16 +181,21 @@ iframe {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 99;
+    z-index: 98;
 }
 
 .closeBtn {
 
     fill: whitesmoke;
     filter: drop-shadow(0px 1px 2px rgb(0 0 0 / 0.24));
-
-    
+    width: 100%;
+    right: 0;
 }
+
+.absolute {
+    position: absolute;
+}
+
 
 .container {
     max-width: 80rem;
@@ -243,6 +265,21 @@ iframe {
     border-radius: .6rem;
 
     box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
+
+
+
+.btn-underage {
+    border-radius: .3rem;
+    
+    --c1: #7aa2ed;
+    --c2: #7898f1;
+
+    opacity: .5;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    position: inherit;
 }
 
 
@@ -499,6 +536,12 @@ input[type="text"]
     margin-top: 1rem;
 }
 
+.panic {
+    right: -9.5rem;
+    top: -9.5rem;
+    height: 6rem;
+}
+
 /* -------------- End of My Code -------------- */
 
 /* Layout */
@@ -540,6 +583,10 @@ section {
     .col-10-sm { display: grid; grid-column: span 10; }
     .col-11-sm { display: grid; grid-column: span 11; }
     .col-12-sm { display: grid; grid-column: span 12; }
+
+    .panic {
+        height: 9rem;
+    }
 
 }
 
@@ -585,6 +632,8 @@ section {
         padding-bottom: 2rem; */
         
     }
+
+    
 
 }
 
@@ -633,15 +682,14 @@ section {
     display: none;
 }
 
-.panic {
+/* .panic {
     aspect-ratio: 1;
     margin: 10rem;
     position: fixed;
-    right: -7.5rem;
-    bottom: 15rem;
+    
     background-color: rgb(251, 15, 15);
     border-radius: 100%;
-    height: 9rem;
+    
     z-index: 99;
     font-weight: 700;
     color: white;
@@ -650,8 +698,36 @@ section {
     align-items: center;
     text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     cursor:pointer;
+
+    right: -7.5rem;
+    bottom: 15rem;
+    height: 9rem;
+} */
+
+.panic {
+    aspect-ratio: 1;
+    margin: 10rem;
+    position: fixed;
     
+    background-color: rgb(251, 15, 15);
+    border-radius: 50%;
+    
+    z-index: 99;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor:pointer;
+
+    right: -9.5rem;
+    bottom: -9.5rem;
+    /* height: 6rem; */
 }
+
+
+
 
 
 
