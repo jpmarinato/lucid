@@ -24,8 +24,6 @@
     <main>
         <button id="get-away" class="panic"><h4 class="noNo">CLOSE</h4></button>
 
-        <!-- <iframe id="iframe" name="iframe" src="first-page.html" frameborder="0"></iframe> -->
-
         <iframe id="iframe" name="iframe" class="iframe" src="text_page.html" frameborder="0"></iframe>
         
         <div class="container">
@@ -59,21 +57,6 @@
                                         </div>
                                         <!-------------------- /TITLE OF PAGE ENDS HERE -------------------->
 
-
-                                        <!-------------------- What is your name? -------------------->
-                                        <!-- <div class="titleText col-12">
-                                            <div class="textWrapper wrapperIndex wrapper">
-                                                <h3>
-                                                    What is your name?
-                                                </h3> 
-                                            </div>
-                                        </div>
-
-                                        <div class="bumperL col-1 col-2-sm"></div>
-
-                                        <input class="col-10 col-8-sm button inputText" type="text" id="name" name="name" required width="100%"/>
-
-                                        <div class="bumperR col-1 col-2-sm"></div> -->
                                         <!-------------------- /What is your name? -------------------->
 
                                         <div class="col-12"></div>
@@ -113,22 +96,6 @@
                                         <!-------------------- /How old are you? -------------------->
 
                                         <div class="col-12"></div>
-
-                                        <!-------------------- How do you identify? -------------------->
-                                        <!-- <div class="titleText col-12">
-                                            <div class="textWrapper wrapperIndex wrapper">
-                                                <h3>
-                                                    How do you identify?
-                                                </h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="bumperL col-1 col-2-sm"></div>
-
-                                        <input class="col-10 col-8-sm button inputText" type="text" id="identity" name="identity" required width="100%"/>
-    
-                                        <div class="bumperR col-1 col-2-sm"></div> -->
-                                        <!-------------------- /How do you identify? -------------------->
 
                                         <div class="col-12"></div>
                                     
@@ -224,14 +191,6 @@
                                 <div class="wrapperIndex 
                                 wrapper"><h5>Parental Resources</h5></div>
                             </div>
-                            <!-- <div class="c1b3 fx button col-12">
-                                <div class="wrapperIndex 
-                                wrapper"><h5>Talk and Text Lines</h5></div>
-                            </div>
-                            <div class="c1b4 fx button col-12">
-                                <div class="wrapperIndex 
-                                wrapper"><h5>Talk and Text Lines</h5></div>
-                            </div> -->
 
                         </div>
                     </div>
@@ -313,13 +272,6 @@
                                         </div>
                                         <div class="bumperR col-1"></div>
 
-                                        <!-- <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame('amab_appearance_shoes.html')" id="c1b1b2" class="cbb c1b1 fx button col-10">
-                                            <div class="wrapperIndex 
-                                            wrapper"><h5>Shoes</h5></div>
-                                        </div>
-                                        <div class="bumperR col-1"></div> -->
-
                                         <div class="bumperL col-1"></div>
                                         <div onclick="iFrame('afab_appearance_clothing.html')" id="c1b1b3" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
@@ -343,10 +295,6 @@
                                     </div> 
                                 </div>
 
-                                
-
-
-
                             <div id="c1b2" class="js-open-next c1b2 fx button col-12">
                                 <div class="wrapperIndex 
                                 wrapper"><h5>Internal</h5></div>
@@ -369,9 +317,6 @@
                                         <div class="bumperR col-1"></div>
                                 </div>
                             </div>
-
-
-
 
                             <div id="c1b3" class="js-open-next c1b3 fx button col-12">
                                 <div class="wrapperIndex 
@@ -497,10 +442,6 @@
                                         <div class="bumperR col-1"></div>
                                 </div>
                             </div>
-
-
-                            
-
                         </div>
                     </div>
                 </div>
@@ -624,11 +565,6 @@
                                         <div class="bumperR col-1"></div>
                                 </div>
                             </div>
-
-                            <!-- <div class="c1b2 fx button col-12"></div>
-                            <div class="c1b3 fx button col-12"></div>
-                            <div class="c1b4 fx button col-12"></div> -->
-
                         </div>
                     </div>
                 </div>
@@ -638,11 +574,7 @@
                 <!------- End of Card 4------->
 
                 <!------------------  /End of Cards ------------------>
-
-                
-
-
-                
+   
             </div>
             </div>
         
@@ -660,22 +592,10 @@
 
             event.preventDefault();
 
-            // const name = document.querySelector("input[name='name']").value;
-
             const age = document.querySelector("input[name='age']:checked").value;
 
-            // const id = document.querySelector("input[name='identity']").value;
-
             const gender = document.querySelector("input[name='gender']:checked").value;
-
-            // for(var i=0;i<document.getElementsByClassName("recipe-type-button").length){
-            //     if(document.getElementsByClassName("recipe-type-button")[i].checked){
-            //         recipe_entry = {
-            //             type : document.getElementsByClassName("recipe-type-button")[i].value
-            //         }
-            //  }
-            // }
-
+            
             /* 
                 gender:
                 amab 
@@ -706,6 +626,10 @@
                 hideClass(".mature");
                 showClass(".underage");
             }
+            else {
+                hideClass(".underage");
+                showClass(".mature");
+            }
 
             document.getElementById("form").style.display = "none";
 
@@ -718,11 +642,9 @@
         dropdownBoxes.forEach( function (current_box) {
 
             current_box.addEventListener("click", function(e) {
-                // console.log(this.nextElementSibling);
 
                 const old_display = this.nextElementSibling.style.display;
-
-                
+  
                 document.querySelectorAll('.child').forEach((other_list_el) => {
                     other_list_el.style.display = "none";
                 });
@@ -730,9 +652,7 @@
                 if(old_display !== "grid") {
                     openChild(this.nextElementSibling); 
                 }
-
             })
-
         });
 
         // -------------HIDE CLASS-------------
@@ -762,15 +682,12 @@
         // -------------OPEN CHILD-------------
 
         function openChild(child){
-        // let child = document.getElementById(childID);
-        // console.log(child.style.display)
-        if(child.style.display !== 'grid') {
-            child.style.display = 'grid';
-        } else {
-            child.style.display = 'none';
-        } 
 
-        // child.style.display = 'grid';
+            if(child.style.display !== 'grid') {
+                child.style.display = 'grid';
+            } else {
+                child.style.display = 'none';
+            } 
         }
         
         // -------------IFRAME-------------

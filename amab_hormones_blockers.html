@@ -31,8 +31,14 @@
                          <div class="container-miniText container-mini">
                              <div class="grid-miniText grid-mini">
  
-                                 <div class="bumperL col-1"></div>
-                                 <div class="titleText col-10">
+                                 <div class="bumperL col-11 col-0-sm"></div>
+                                 <div onclick="openChild(parent.document.getElementById(window.name))" class="col-1 col-0-sm closeWrapper">
+                                     <svg class="wrapperIndex wrapper closeBtn" xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                                 </div>
+                                 
+ 
+                                 <div class="bumperL col-0 col-1-sm"></div>
+                                 <div class="titleText col-12 col-10-sm">
                                      <div class="wrapperIndex wrapper">
                                  <!-------------------- TITLE OF PAGE GOES HERE -------------------->     
  
@@ -40,13 +46,14 @@
                                              Blockers
                                          </h1>
  
-                                 <!-------------------- /TITLE OF PAGE ENDS HERE -------------------->    
-                                     </div>
-                                 </div>
-                                 <div onclick="openChild(parent.document.getElementById(window.name))" class="col-1">
-                                     <svg class="wrapperIndex wrapper closeBtn" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                                 </div>
-                                 <div class="bumperR col-0"></div>
+ 
+                                <!-------------------- /TITLE OF PAGE ENDS HERE -------------------->    
+                             </div>
+                         </div>
+                         <div onclick="openChild(parent.document.getElementById(window.name))" class="col-0 col-1-sm closeWrapper">
+                             <svg class="wrapperIndex wrapper closeBtn" xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                         </div>
+                         <div class="bumperR col-0"></div>
  
                                  <!-------------------- /SPAN -------------------->  
  
@@ -73,86 +80,64 @@
                                 <p>These medications work at your pituitary gland, and cause it to shut down the signals being sent to your testicles that tell them to make testosterone. These medications are very effective and well tolerated, but can be expensive, depending on coverage. </p>
 
                                 <h3>Progesterone</h3>
-                                <p>Tpatches are a great alternative to gells if you are worried about the transfer of your hormones on others. Patches are worn for 24 hours, and changed daily. Depending on the brand, they are known to cause allergic reactions, so it is important to test the patch before committing to this hormone delivery type.</p>
+                                <p>Patches are a great alternative to gels if you are worried about the transfer of your hormones on others. Patches are worn for 24 hours, and changed daily. Depending on the brand, they are known to cause allergic reactions, so it is important to test the patch before committing to this hormone delivery type.</p>
                                     
                                 <!-------------------- /TEXT ENDS HERE --------------------->
-                                        </div>
-                                        <div class="bumperL col-0 col-1-md"></div>
-                                        <div class="spacer-25 col-12"></div>
-
-
-                                </div>
-                                
-                                <div class="bumperR col-1"></div>
-                                    
-                                </div>
-                                <div class="col-12"></div>
-
-                                <!-- <div class="c1b3 fx button col-12">
-                                    <div class="wrapper"><h5>Talk and Text Lines</h5></div>
-                                </div>
-                                <div class="c1b4 fx button col-12">
-                                    <div class="wrapper"><h5>Talk and Text Lines</h5></div>
-                                </div> -->
-
                             </div>
-                        </div>
-                        
+                            <div class="bumperL col-0 col-1-md"></div>
+                            <div class="spacer-25 col-12"></div>
+
+
                     </div>
                     
-                    
-                    <div class="bumperR col-0"></div>
+                    <div class="bumperR col-1"></div>
+                        
+                    </div>
+                    <div class="col-12"></div>
 
-                    <!------- End of Card 1------->
-
-                    
-
-                    
+                </div>
             </div>
-        
-        
-        </div>
-    </main>
-    
-    <!-- <footer>
-    </footer> -->
-  
-    <script>    
-        
-
-
-        const dropdownBoxes = document.querySelectorAll(".js-open-next");
-
-        dropdownBoxes.forEach( function (current_box) {
-
-            current_box.addEventListener("click", function() {
-                // console.log(this.nextElementSibling);
-                openChild(this.nextElementSibling); 
-            })
-
-        });
-        
-        function openChild(child){
-            // let child = document.getElementById(childID);
-            console.log(child.style.display)
-            if(child.style.display !== 'grid') {
-                child.style.display = 'grid';
-            } else {
-                child.style.display = 'none';
-            } 
-
-            // child.style.display = 'grid';
-        }
-        
-        // function parentChild(parentID, childID){
-        //     let parent = document.getElementById(parentID);
             
+        </div>
+        
+        
+        <div class="bumperR col-0"></div>
 
-        //     parent.addEventListener(click, openChild(childID))
-        // }
+        <!------- End of Card 1------->
 
         
 
-        // parentChild(c1b1,c1b1Child);
-    </script>
+        
+</div>
+
+
+</div>
+</main>
+
+<!-- <footer>
+</footer> -->
+
+<script>    
+
+const dropdownBoxes = document.querySelectorAll(".js-open-next");
+
+dropdownBoxes.forEach( function (current_box) {
+
+current_box.addEventListener("click", function() {
+    openChild(this.nextElementSibling); 
+})
+
+});
+
+function openChild(child){
+
+console.log(child.style.display)
+if(child.style.display !== 'grid') {
+    child.style.display = 'grid';
+} else {
+    child.style.display = 'none';
+} 
+}
+
+</script>
 </body>
