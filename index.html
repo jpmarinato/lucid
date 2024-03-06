@@ -16,13 +16,13 @@
 
 </head>
 <body>
-    <button id="get-away" class="panic"><h4 class="noNo">CLOSE</h4></button>
+    
 
     <!-- <header>
     </header> -->
 
     <main>
-        
+        <button id="get-away" class="panic"><h4 class="noNo">CLOSE</h4></button>
 
         <!-- <iframe id="iframe" name="iframe" src="first-page.html" frameborder="0"></iframe> -->
 
@@ -37,11 +37,9 @@
                         <div class="form col-12"></div>
 
                             <!--------- Text Card --------->
-                        <div class="bumperL col-0"></div>
+                        <div class="bumperL col-0 col-1-sm col-2-md"></div>
 
-                        <div class="bumperL col-0 col-1-sm"></div>
-
-                        <div class="cardText col-12 col-10-sm">
+                        <div class="cardText col-12 col-10-sm col-8-md">
 
                             <form id="userStats">
                                 <div class="container-mini">
@@ -63,7 +61,7 @@
 
 
                                         <!-------------------- What is your name? -------------------->
-                                        <div class="titleText col-12">
+                                        <!-- <div class="titleText col-12">
                                             <div class="textWrapper wrapperIndex wrapper">
                                                 <h3>
                                                     What is your name?
@@ -71,11 +69,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="bumperL col-2"></div>
+                                        <div class="bumperL col-1 col-2-sm"></div>
 
-                                        <input class="col-8 button inputText" type="text" id="name" name="name" required width="100%"/>
+                                        <input class="col-10 col-8-sm button inputText" type="text" id="name" name="name" required width="100%"/>
 
-                                        <div class="bumperR col-2"></div>
+                                        <div class="bumperR col-1 col-2-sm"></div> -->
                                         <!-------------------- /What is your name? -------------------->
 
                                         <div class="col-12"></div>
@@ -117,7 +115,7 @@
                                         <div class="col-12"></div>
 
                                         <!-------------------- How do you identify? -------------------->
-                                        <div class="titleText col-12">
+                                        <!-- <div class="titleText col-12">
                                             <div class="textWrapper wrapperIndex wrapper">
                                                 <h3>
                                                     How do you identify?
@@ -125,11 +123,11 @@
                                             </div>
                                         </div>
 
-                                        <div class="bumperL col-2"></div>
+                                        <div class="bumperL col-1 col-2-sm"></div>
 
-                                        <input class="col-8 button inputText" type="text" id="identity" name="identity" required width="100%"/>
+                                        <input class="col-10 col-8-sm button inputText" type="text" id="identity" name="identity" required width="100%"/>
     
-                                        <div class="bumperR col-2"></div>
+                                        <div class="bumperR col-1 col-2-sm"></div> -->
                                         <!-------------------- /How do you identify? -------------------->
 
                                         <div class="col-12"></div>
@@ -166,9 +164,9 @@
                                         <div class="spacer-25 col-12"></div>
 
 
-                                        <div class="bumperL col-4"></div>
+                                        <div class="bumperL col-3 col-4-sm"></div>
 
-                                        <div class="textWrapper col-4">
+                                        <div class="textWrapper col-6 col-4-sm">
 
                                             <!-------------------- BUTTON -------------------->
 
@@ -177,6 +175,7 @@
                                             <!-------------------- /BUTTON -------------------->
 
                                         </div>
+                                        <div class="bumperL col-3 col-4-sm"></div>
 
                                         <div class="bumperR col-0 col-1-md"></div>
 
@@ -190,7 +189,7 @@
                         </div>
                         <!-------------------- /cardText --------------------->
 
-                        <div class="bumperR col-0 col-1-sm"></div>
+                        <div class="bumperR col-0 col-1-sm col-2-md"></div>
                     
                         <div class="bumperR col-0"></div>
 
@@ -521,7 +520,15 @@
                                 wrapper"><h2 class="titleText">Surgery</h2></div>
                             </div>
 
-                            <div id="c4b1" class="js-open-next c1b1 fx button col-12">
+                            <div id="c4b0" class="underage btn-underage fx c1b1 col-12">
+                                <div class="wrapperIndex 
+                                wrapper"><h5>Mature Content</h5></div>
+                            </div>
+
+                            <div class="underage col-12"></div>
+
+                            <div id="c4b1" class="mature js-open-next c1b1 fx button col-12">
+                                <div class="overlay"></div>
                                 <div class="wrapperIndex 
                                 wrapper"><h5>Logistics</h5></div>
                             </div>
@@ -529,14 +536,14 @@
                             <div id="c4b1Child" class="child col-12">
                                 <div class="grid-mini">
                                     <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b1b1" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b1b1" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Funding</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c1b1b2" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c1b1b2" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Pre-Requisites Waitlists</h5></div>
                                         </div>
@@ -544,7 +551,7 @@
                                 </div>
                             </div>
 
-                            <div id="c4b2" class="js-open-next AMAB c1b2 fx button col-12">
+                            <div id="c4b2" class="mature js-open-next AMAB c1b2 fx button col-12">
                                 <div class="wrapperIndex 
                                 wrapper"><h5>Surgical Options</h5></div>
                             </div>
@@ -552,35 +559,35 @@
                             <div id="c4b2Child" class="AMAB child col-12">
                                 <div class="grid-mini">
                                     <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b2b1" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b2b1" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Voice Surgeries</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b2b2" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b2b2" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Adam's Apple Removal</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b2b3" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b2b3" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>FFS</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b2b4" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b2b4" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Top Surgery</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b2b5" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b2b5" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Bottom Surgery</h5></div>
                                         </div>
@@ -588,7 +595,7 @@
                                 </div>
                             </div>
 
-                            <div id="c4b3" class="js-open-next AFAB c1b2 fx button col-12">
+                            <div id="c4b3" class="mature js-open-next AFAB c1b2 fx button col-12">
                                 <div class="wrapperIndex 
                                 wrapper"><h5>Surgical Options</h5></div>
                             </div>
@@ -596,21 +603,21 @@
                             <div id="c4b3Child" class="AFAB child col-12">
                                 <div class="grid-mini">
                                     <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b3b1" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b3b1" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Internal Organ Removal</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b3b2" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b3b2" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Top Surgery</h5></div>
                                         </div>
                                         <div class="bumperR col-1"></div>
 
                                         <div class="bumperL col-1"></div>
-                                        <div onclick="iFrame()" id="c4b3b3" class="cbb c1b1 fx button col-10">
+                                        <div onclick="iFrame('coming_soon.html')" id="c4b3b3" class="cbb c1b1 fx button col-10">
                                             <div class="wrapperIndex 
                                             wrapper"><h5>Bottom Surgery</h5></div>
                                         </div>
@@ -653,11 +660,11 @@
 
             event.preventDefault();
 
-            const name = document.querySelector("input[name='name']").value;
+            // const name = document.querySelector("input[name='name']").value;
 
             const age = document.querySelector("input[name='age']:checked").value;
 
-            const id = document.querySelector("input[name='identity']").value;
+            // const id = document.querySelector("input[name='identity']").value;
 
             const gender = document.querySelector("input[name='gender']:checked").value;
 
@@ -680,9 +687,9 @@
                 25 
             */
 
-            console.log(name); //unused for now
+            // console.log(name); //unused for now
             console.log(age);
-            console.log(id); //unused for now
+            // console.log(id); //unused for now
             console.log(gender);
 
             hideClass(".form")
@@ -697,9 +704,10 @@
 
             if (age == "0_17") {
                 hideClass(".mature");
+                showClass(".underage");
             }
 
-            // document.getElementById("form").style.display = "none";
+            document.getElementById("form").style.display = "none";
 
         })
 
@@ -783,7 +791,7 @@
 
         function getAway() {
             // Get away right now
-            window.open("http://weather.com", "_newtab");
+            window.open("https://www.cineplex.com/", "_newtab");
             // Replace current site with another benign site
             window.location.replace('http://google.com');
         }
